@@ -1,12 +1,15 @@
-import { useLenis } from "./hooks/useLenis";
-import Home from "./pages/Home";
+import Hero from "./components/sections/Hero";
+import Projects from "./components/sections/Projects";
+import Scene from "./components/three/Scene";
+import Cursor from "./components/ui/Cursor";
 
 export default function App() {
-  useLenis();
-
   return (
     <div>
-      <Home />
+      <Cursor />
+      <Scene />
+      <Hero />
+      <Projects />
     </div>
   );
 }
